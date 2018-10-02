@@ -4,10 +4,10 @@
 		<myHeader msg="Server Details"/>
 		<v-layout row>
     		<v-flex xs12 sm6 >
-      			<server/>
+      			<server />
     		</v-flex>
 			<v-flex xs12 sm6>
-      			<serverDetails msg=""/>
+      			<serverDetails @send-data="msg = $event"/>
     		</v-flex>
   		</v-layout>
 		<myFooter/>
@@ -16,29 +16,28 @@
 </template>
 
 <script>
-import myHeader from './components/header.vue'
-import myFooter from './components/footer.vue'
-import serverDetails from './components/serverDetails.vue'
-import server from './components/server.vue'
+import myHeader from "./components/header.vue";
+import myFooter from "./components/footer.vue";
+import serverDetails from "./components/serverDetails.vue";
+import server from "./components/server.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-	myHeader,
-	myFooter,
-	serverDetails,
-	server
+    myHeader,
+    myFooter,
+    serverDetails,
+    server
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
