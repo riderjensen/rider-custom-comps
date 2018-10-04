@@ -1,5 +1,5 @@
 <template>
-	<h1>{{msg}}</h1>
+	<h1>Server Details</h1>
 </template>
 
 <script>
@@ -15,5 +15,6 @@ export default {
 <style scoped>
 	h1{
 		margin-bottom: 40px;
+    background-color: #fff;
 	}
 </style>

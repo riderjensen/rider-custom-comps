@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <v-app>
-		<myHeader msg="Server Details"/>
+		<myHeader/>
 		<v-layout row>
     		<v-flex xs12 sm6 >
       			<server />
@@ -39,5 +39,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color:lightgray;
 }
 </style>
