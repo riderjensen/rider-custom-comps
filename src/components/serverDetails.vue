@@ -14,23 +14,22 @@
 <script>
 import { eventBus } from "../main";
 export default {
-	name: "serverDetails",
-	props: {
-		msg: Object
-	},
-	created() {
-		eventBus.$on("send-data", data => {
-			this.msg = data;
-		});
-	}
+  name: "serverDetails",
+  props: {
+    msg: Object
+  },
+  created() {
+    eventBus.$on("send-data", data => {
+      this.msg = data;
+    });
+  }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-p{
-	padding-top:30px;
-	font-size: 30px;
+p {
+  padding-top: 30px;
+  font-size: 30px;
 }
 </style>
